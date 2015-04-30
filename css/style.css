@@ -69,7 +69,8 @@ h2 a:hover {
   color: rgb(39, 39, 164);
 }
 .dash { font-weight: 700; }
-.author {
+
+.author, .date {
   color: #b7b7b7;
   text-transform: uppercase;
   letter-spacing: 1px;

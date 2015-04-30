@@ -3,6 +3,6 @@
 	$db_server = 'localhost';
 	$db_username = 'root';
 	$db_password = 'root';
-	$db_name = 'bookshelf';
+	$db_name = 'newshelf';
 
 ?>

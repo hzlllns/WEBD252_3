@@ -28,9 +28,10 @@
 						</h2>
 						<span class="author"><?php echo $row['Author']; ?></span>
 						<a href="<?php echo $row['Link']; ?>">
-							<img class="cover" src="uploads/<?php echo $row['LargeImage']; ?>" />
+							<img class="cover" src="uploads/<?php echo $row['CoverImage']; ?>" />
 						</a>
 						<p><?php echo $row['Description']; ?></p>
+						<?php echo $row['DateRead']; ?>
 					</li>
 
 				</ul>

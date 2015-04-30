@@ -27,6 +27,7 @@
 	$query = $db_connection->prepare(
 		'INSERT INTO Content(Title, DateRead, Author, Link, CoverImage, Description) VALUES(?, ?, ?, ?, ?, ?)'
 	);
+
 	$query->bindParam(1, $_POST['Title']);
 	$query->bindParam(2, $_POST['DateRead']);	
 	$query->bindParam(3, $_POST['Author']);

@@ -17,7 +17,7 @@ $result = $db_connection->query(
 
 <?php include "header.php"; ?>
 
-			<a href="admin/add.php" id="add">+</a>
+			<a href="admin/login.php" id="add">+</a>
 
 			<ul id="bookshelf"><?php while ($row = $result->fetch()): ?>
 				<li>
@@ -28,9 +28,9 @@ $result = $db_connection->query(
 					</h2>
 					<span class="author"><?php echo $row['Author']; ?></span>
 					<a href="<?php echo $row['Link']; ?>" class="cover">
-						<img src="uploads/<?php echo $row['ThumbnailImage']; ?>" />
+						<img src="uploads/<?php echo $row['CoverImage']; ?>" />
 					</a>
-					<?php echo $row['DateRead']; ?>
+					<span class="date"><?php echo $row['DateRead']; ?></span>
 				</li>
 			<?php endwhile; ?></ul>
 
